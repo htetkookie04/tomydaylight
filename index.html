@@ -683,7 +683,6 @@ setInterval(spawnHeart, 400);
    =============================================================== */
 const intro = document.getElementById('intro');
 const stage = document.getElementById('stage');
-const controls = document.getElementById('controls');
 
 document.getElementById('startBtn').addEventListener('click', () => {
   intro.style.opacity = '0';
@@ -694,7 +693,6 @@ document.getElementById('startBtn').addEventListener('click', () => {
     // fade matrix text to just the heart shape or clear it for rain look
     setMask('♥');
     stage.classList.add('show');
-    controls.classList.add('show');
     document.getElementById('musicBtn').style.display = 'flex';
     const np = document.getElementById('nowPlaying');
     np.classList.add('show');
