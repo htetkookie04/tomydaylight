@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>For My Love 💗</title>
+<title>For My Love 💜</title>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -437,7 +437,7 @@
 
 <div id="intro">
   <div id="intro-top">A little surprise for you...</div>
-  <button id="startBtn">Open my heart 💗</button>
+  <button id="startBtn">Open my heart 💜</button>
 </div>
 
 <div id="stage">
@@ -447,7 +447,7 @@
   <div id="message">
     <span class="line">In every photo, I see a thousand reasons I love you.</span>
     <span class="line">You are my favorite hello and my hardest goodbye.</span>
-    <span class="line">Forever yours 💗</span>
+    <span class="line">Forever yours 💜</span>
   </div>
 </div>
 
@@ -672,7 +672,7 @@ const seqTimer = setInterval(() => {
 function spawnHeart() {
   const h = document.createElement('div');
   h.className = 'heart';
-  h.textContent = ['💗','💕','💖','❤️','💘'][(Math.random()*5)|0];
+  h.textContent = '💜';
   h.style.left = Math.random() * 100 + 'vw';
   h.style.fontSize = (16 + Math.random() * 22) + 'px';
   const dur = 5 + Math.random() * 5;
@@ -747,10 +747,10 @@ cover.className = 'page cover';
 cover.innerHTML = `
   <div class="face front">
     <div class="cover-title">Our Story</div>
-    <div class="cover-heart">💗</div>
+    <div class="cover-heart">💜</div>
     <div class="cover-sub">TAP TO OPEN</div>
   </div>
-  <div class="face back">💗</div>
+  <div class="face back">💜</div>
 `;
 book.appendChild(cover);
 pages.push(cover);
@@ -764,7 +764,7 @@ for (let i = 0; i < imgs.length; i++) {
   front.style.backgroundImage = `url("${imgs[i]}")`;
   const back = document.createElement('div');
   back.className = 'face back';
-  back.textContent = '💗';
+  back.textContent = '💜';
   p.appendChild(front);
   p.appendChild(back);
   book.appendChild(p);
