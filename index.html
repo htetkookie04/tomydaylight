@@ -451,11 +451,6 @@
   </div>
 </div>
 
-<div id="controls">
-  <button class="btn" id="prevBtn">‹ Prev</button>
-  <button class="btn" id="nextBtn">Next ›</button>
-</div>
-
 <audio id="bgm" src="taylor_swift_daylight_lyrics_mp3_10146.mp3" loop preload="auto"></audio>
 
 <button id="musicBtn" class="paused" style="display:none;" aria-label="Play music">
@@ -822,9 +817,6 @@ function closeBook() {
     closing = false;
   }, total);
 }
-
-document.getElementById('nextBtn').onclick = next;
-document.getElementById('prevBtn').onclick = prev;
 
 // also allow clicking the book itself to flip forward
 book.addEventListener('click', next);
